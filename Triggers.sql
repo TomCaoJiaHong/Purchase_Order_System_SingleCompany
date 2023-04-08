@@ -15,5 +15,15 @@ DELIMITER ;
 Show triggers;
 
 
+DROP PROCEDURE part_price;
+
+DELIMITER $$
+CREATE PROCEDURE part_price (IN id INT)
+
+BEGIN
+	SELECT * from mydb.Parts402 WHERE partNo = id;
+END$$
+
+CALL part_price(1);
 
 
