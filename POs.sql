@@ -1,0 +1,3 @@
+SELECT * FROM mydb.POs;
+
+SET SQL_SAFE_UPDATES = 0;
